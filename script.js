@@ -767,7 +767,7 @@ function setupFooter() {
   $("year").textContent = new Date().getFullYear();
 
   const validNumber = /^\d{10,15}$/.test(STORE_WHATSAPP) &&
-    STORE_WHATSAPP !== "2348012345678";
+    STORE_WHATSAPP !== "2348107336068";
 
   $("contactWhatsApp").href = validNumber
     ? `https://wa.me/${STORE_WHATSAPP}`
