@@ -509,7 +509,7 @@ function placeOrder(event) {
   showPage("confirmation");
 
   const validNumber = /^\d{10,15}$/.test(STORE_WHATSAPP);
-  if (validNumber && STORE_WHATSAPP !== "2348012345678") {
+  if (validNumber && STORE_WHATSAPP !== "2348107336068") {
     const message = [
       "NEW ORDER — JNR CODDING STORE",
       `Order: ${order.orderNumber}`,
@@ -767,7 +767,7 @@ function setupFooter() {
   $("year").textContent = new Date().getFullYear();
 
   const validNumber = /^\d{10,15}$/.test(STORE_WHATSAPP) &&
-    STORE_WHATSAPP !== "2348107336068";
+    STORE_WHATSAPP !== "2348012345678";
 
   $("contactWhatsApp").href = validNumber
     ? `https://wa.me/${STORE_WHATSAPP}`
